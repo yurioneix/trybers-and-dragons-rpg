@@ -18,14 +18,13 @@ class Monster implements SimpleFighter {
   }
 
   attack(enemy: SimpleFighter): void {
-    throw new Error('Method not implemented.');
+    enemy.receiveDamage(this._strength);
   }
 
   receiveDamage(attackPoints: number): number {
-    const damage = attackPoints - this._lifePoints;
-    this._lifePoints -= damage;
+    this._lifePoints -= attackPoints;
 
-    if (this._lifePoints === 0) {
+    if (this._lifePoints <= 0) {
       this._lifePoints = -1;
     }
     
