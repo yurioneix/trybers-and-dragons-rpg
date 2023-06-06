@@ -88,6 +88,11 @@ class Character implements Fighter {
       this._lifePoints = this._race.maxLifePoints;
     }
   }
+
+  special(enemy: Fighter): void {
+    const specialAttack = enemy.strength * 2 + enemy.lifePoints;
+    this.receiveDamage(specialAttack);
+  }
 }
 
 export default Character;
