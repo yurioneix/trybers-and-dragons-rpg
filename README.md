@@ -45,7 +45,7 @@ Sinta-se à vontade para se divertir batalhando nos campos de T&D.🐉
 
 <br>
 
-## Pastas/arqvuivos desenvolvidos por mim
+## Pastas/arquivos desenvolvidos por mim
 
 ```bash
   src/Archetypes/
